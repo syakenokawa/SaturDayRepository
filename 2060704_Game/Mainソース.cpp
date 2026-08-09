@@ -1,39 +1,39 @@
 #include"DxLib.h"
+#include"motoClass.cpp"
 
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+int playerX = 300;
+int playerY = 200;
+
+int playe,png;
+
+void playerMove()
 {
-	ChangeWindowMode(TRUE);
-	ChangeWindowMode(TRUE);
-	DxLib_Init();
-	SetGraphMode(800, 600, 32);
-	if (DxLib_Init() == -1)return -1;
+	if (CheckHitKey(KEY_INPUT_LEFT))
+	{
+		playerX -= 5;
+	}
+	if (CheckHitKey(KEY_INPUT_RIGHT))
+	{
+		playerX += 5;
+	}
 
-	int fontColoor = GetColor(255, 100, 0);
-
-	while ()
-
-
-
-
-
-
-
-
-
-
-
+	if (CheckHitKey(KEY_INPUT_UP))
+	{
+		playerY -= 5;
+	}
+	if (CheckHitKey(KEY_INPUT_DOWN))
+	{
+		playerY += 5;
+	}
 
 }
 
+void PlayerDraw()
+{
+	DrawGraph(	playerX,playerY,playerImg,TRUE);
+	
 
-
-
-
-
-
-
-
-
+}
 
 
 
