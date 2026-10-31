@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="kenn.vcxproj" />
+  <Project Path="kenn.vcxproj" Id="1d2ed90d-ee2a-4db9-877d-86a68a6b3bad" />
 </Solution>
